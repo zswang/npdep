@@ -1,0 +1,10 @@
+{
+  "name": "npdep-examples",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "jquery": "^2.1.3",
+    "jhtmls": "^0.1.9",
+    "iscroll": "^5.1.3"
+  }
+}
