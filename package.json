@@ -1,17 +1,52 @@
 {
-	"name": "npdep",
-	"version": "0.0.0",
-	"private": true,
-	"dependencies": {
-		"read-installed": "^2.0.0",
-		"deasync": "^0.1.3",
-		"cbml": "^0.1.0"
-	},
+  "name": "npdep",
+  "description": "Automatic import NPM's main file to HTML",
+  "version": "0.0.14",
+  "main": "jpacks.js",
+  "bin": {
+    "npdep": "cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zswang/npdep.git"
+  },
+  "keywords": [
+    "npm",
+    "depend"
+  ],
+  "author": {
+    "name": "zswang",
+    "url": "http://weibo.com/zswang"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zswang/npdep/issues"
+  },
+  "homepage": "https://github.com/zswang/npdep",
+  "dependencies": {
+    "read-installed": "^2.0.0",
+    "deasync": "^0.1.3",
+    "cbml": "^0.1.0",
+    "colors": "^1.0.3",
+    "optimist": "^0.6.1"
+  },
   "devDependencies": {
     "mocha": "^2.0.1",
     "istanbul": "^0.3.17",
     "should": "^4.1.0",
     "jdists": "^1.0.9",
     "jshint": "^2.8.0"
-  }
+  },
+  "scripts": {
+    "_update_version": "jdists version.jdists",
+    "_dist": "jdists src/npdep.js -o lib/npdep.js",
+    "test": "istanbul cover --hook-run-in-context node_modules/mocha/bin/_mocha -- -R spec",
+    "lint": "jshint src/npdep.js",
+    "dist": "npm run _update_version && npm run _dist"
+  },
+  "files": [
+    "index.js",
+    "cli.js",
+    "lib"
+  ]
 }
