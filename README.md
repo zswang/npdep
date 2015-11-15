@@ -83,3 +83,4 @@ index.html
 MIT © [zswang](http://weibo.com/zswang)
 
 [npm-url]: https://npmjs.org/package/npdep
+[npm-image]: https://badge.fury.io/js/npdep.svg
