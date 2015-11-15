@@ -1,8 +1,8 @@
 {
   "name": "npdep",
   "description": "Automatic import NPM's main file to HTML",
-  "version": "0.0.14",
-  "main": "jpacks.js",
+  "version": "0.0.16",
+  "main": "lib/npdep.js",
   "bin": {
     "npdep": "cli.js"
   },
