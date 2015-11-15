@@ -69,7 +69,7 @@ index.html
   <title>npdep example</title>
   <!--npdep depend="jquery,iscroll"-->
   <script src="node_modules/jquery/dist/jquery.js"></script>
-  <script src="node_modules/iscroll/build/iscroll.js"></script>
+  <script src="node_modules/jhtmls/jhtmls.js"></script>
   <script src="node_modules/iscroll/build/iscroll.js"></script>
   <!--/npdep-->
 </head>
